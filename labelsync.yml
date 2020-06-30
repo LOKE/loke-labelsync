@@ -1,0 +1,1307 @@
+# Colors
+colors:
+  area: &area "#FFD700"
+  kind: &kind "#3B5BDB"
+  status: &status "#F8F9FA"
+  bug: &bug "#EE0000"
+  priority: &priority "#F783AC"
+  scope: &scope "#27CF79"
+  team: &team'#FDF4E8'
+  release: &release "#A5D8ff"
+  process: &process' "#EB9100"
+
+# Labels
+labels: &common
+  "bug/0-needs-info":
+    color: &bug
+    description: More information is needed for reproduction.
+    siblings: ["kind/bug"]
+  "bug/1-repro-available":
+    color: &bug
+    description: A reproduction exists and needs to be confirmed.
+    siblings: ["kind/bug"]
+  "bug/2-confirmed":
+    color: &bug
+    description: We have confirmed that this is a bug.
+    siblings: ["kind/bug"]
+  "kind/bug":
+    color: &bug
+    description: A reported bug.
+    alias: ["bug"]
+  "kind/regression":
+    color: &kind
+    description: A reported bug in functionality that used to work before.
+  "kind/feature":
+    color: &kind
+    description: A request for a new feature.
+    alias: ["enhancement"]
+  "kind/improvement":
+    color: &kind
+    description: An improvement to existing feature and code.
+  "kind/docs":
+    color: &kind
+    description: A documentation change is required.
+    alias: ["documentation"]
+  "kind/discussion":
+    color: &kind
+    description: Discussion is required.
+  "kind/question":
+    color: &kind
+    description: Developer asked a question. No code changes required.
+    alias: ["question"]
+
+# Repositories
+repos:
+  Boogiespot-iOS-Clients:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  boogiespot-cms:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  Boogiespot-Android-Library:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  Boogiespot-iOS-Library:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  Boogiespot-Boss:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  boogiespot.com:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke.com.au:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  Boogiespot-Android-Clients:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  boss-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  boss-ui:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tabmo-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tabmo-ios:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tambo-ctrl:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  taxi-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-ios-signup:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  banking-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  dispatch-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-ctrl:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-web-signup:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-ios:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  email-templates:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  angular-strap:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  ckeditor-releases:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  bootstrap-bower:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-android:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-dev-ui:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  lokbot:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  magic:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-posapi-client:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  hands:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  socketio4net:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  dispatch-static:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-nopos-android:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-nopos-windows:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  archive-aston-auth:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  acl-explorer:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-tracker:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-possdk-sampleapps:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  spectre:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  socket.io:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  servicediscovery-dotnet:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-nopos-proxy:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  voucher-store-widget:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-minigun:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-pos-sdk:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  feet:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-android-lib:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-boilerplate:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  sublime-snippets:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-validator:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-webapp-builder:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-logger:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-config:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-ipc:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-orm:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  best-practices:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  mysql-orm:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  mixpanel-user-agent:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  jsdoc-theme:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  s3-folder-sync:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  s3-proxy-auth:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  another-di:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-queue:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-chat:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  express-httpchk:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  heapdump-interval:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  supertest-thenable:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-ipc-logger:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-deployer:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  protected-s3:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  papertrail-feedback-loop:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-nab-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-nab-ops:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-nab-android:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-auth:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-integrations:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-ui:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-ops-ui:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  infrastructure:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-nab-about:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-lib-android:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-orderahead-android:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-bluedot-triggers-android:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  cocoapods:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-sdk-ios:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-ios:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-operator:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-order-ahead-ios:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-nab-ios:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-android:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-posapi:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  lobby-boy:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-payments:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-webpos:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  documentation:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-ui:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-web-client:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-directory:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-sdk-web:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-webpos-tile:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-http-rpc:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-http-rpc-client:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  prototyping:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-screens:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-reporter:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-banking:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aba-stringify:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  aston-webpos-builds:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  serverless-ops:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-assets:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  image-resizer:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  buildAndroid:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  android-build-tools:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  client-onboarding:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  ideas:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-orders:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  backend-coding-challenge:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  incident-reports:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  app-ui-styleguide:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  ios-certs:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-repo-meta:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  empty:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  di-ioc:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  breaker:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  github-oauth2-proxy:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-redis-cache:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  hooks:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-customer-web:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  staff-onboarding:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  policies:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  tidy-customer-data:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-callback:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-experiments:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  terminal-v2:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  qa:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  operations:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  features:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  selfservice:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  public-api:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  doshii-link:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  loke-signup:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  dfd:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  table-bills:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  statsbot:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  flyt-link:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  theme-editor:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  auth:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  eagleeye-link:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  app:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  errors:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  auth-kit:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  css-kit:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  http-kit:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  http-client:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  zonal-link:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  schemas:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  db-kit:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  emailer:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  unleash-server:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  mock-link:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  deploy-buildkite-plugin:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  nodejs-buildkite-plugin:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  upload-package-buildkite-plugin:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  app-manager:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  mac-ci-setup:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  react-native-notifications:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  kounta-link:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  s3proxy:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  challenge:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  challenge-notes:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  duration:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  fraud-tracker:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  presentations:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  challenge-workbook:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  web-ordering:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  stripe-payments:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
+  sprints:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      {}
+      # <<: *common
+      # Add labels here.
