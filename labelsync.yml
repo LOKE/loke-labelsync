@@ -76,7 +76,7 @@ labels: &labels
 
 # Repositories
 repos:
-  app:
+  "*":
     config:
       removeUnconfiguredLabels: false
     labels:
@@ -90,7 +90,25 @@ repos:
       # Add extra labels here.
   tidy-api:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  aston-api:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  tidy-orders:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  stripe-payments:
+    config:
+      removeUnconfiguredLabels: true
     labels:
       <<: *labels
       # Add extra labels here.
