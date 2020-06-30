@@ -56,6 +56,9 @@ labels: &labels
   "next-sprint":
     color: "#c2e0c6"
     description: "This is suggested work for the next sprint (likely to be scheduled)"
+  "regression":
+    color: "#910f05"
+    description: Something that was previously confirmed working is now not working
   "release":
     color: "#20fce6"
     description: A planned bundle of features into a single release
