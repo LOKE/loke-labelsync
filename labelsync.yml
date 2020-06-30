@@ -82,13 +82,7 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
-  web-ordering:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *labels
-      # Add extra labels here.
-  tidy-api:
+  app:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -100,13 +94,61 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
-  tidy-orders:
+  aston-operator:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  aston-payments:
     config:
       removeUnconfiguredLabels: true
     labels:
       <<: *labels
       # Add extra labels here.
   stripe-payments:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  tidy-api:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  tidy-orders:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  tidy-ui:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  web-ordering:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  doshii-link:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  kounta-link:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  zonal-link:
     config:
       removeUnconfiguredLabels: true
     labels:
