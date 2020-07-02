@@ -106,6 +106,12 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
+  features:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
   stripe-payments:
     config:
       removeUnconfiguredLabels: true
