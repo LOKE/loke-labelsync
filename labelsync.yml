@@ -109,6 +109,12 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
+  aston-posapi:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
   features:
     config:
       removeUnconfiguredLabels: true
