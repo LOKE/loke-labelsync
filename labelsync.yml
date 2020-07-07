@@ -121,6 +121,12 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
+  serverless-ops:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
   stripe-payments:
     config:
       removeUnconfiguredLabels: true
