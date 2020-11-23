@@ -35,11 +35,12 @@ labels: &labels
   #     - "addition: feature"
   "improvement":
     color: "#a2eeef"
-    description: "Improving or enhancing an existing feature"
+    description: "Adding new functionality, or improving and enhancing an existing feature"
     alias:
       - "improvement: enhancement"
       - "improvement: optimization"
       - "enhancement"
+      - "feature"
   "maintenance":
     color: "#ffc9df"
     description: "Chore, task, clean-up, refactor, or other work that adds no direct business value"
@@ -53,9 +54,9 @@ labels: &labels
       - "maintenance: refactor"
       - "maintenance: tech debt"
       - "maintenance: tooling"
-  "next-sprint":
-    color: "#c2e0c6"
-    description: "This is suggested work for the next sprint (likely to be scheduled)"
+  # "next-sprint":
+  #   color: "#c2e0c6"
+  #   description: "This is suggested work for the next sprint (likely to be scheduled)"
   "regression":
     color: "#910f05"
     description: Something that was previously confirmed working is now not working
@@ -64,9 +65,9 @@ labels: &labels
     description: A planned bundle of features into a single release
     alias:
       - "addition: release"
-  "this-sprint":
-    color: "#1004e8"
-    description: "This item is on our agenda for this sprint (scheduled to be worked on)"
+  # "this-sprint":
+  #   color: "#1004e8"
+  #   description: "This item is on our agenda for this sprint (scheduled to be worked on)"
   "unplanned":
     color: "#9e2acc"
     description: "This work was not scheduled for this sprint (during planning)"
@@ -76,6 +77,18 @@ labels: &labels
     alias:
       - "inactive: wont fix"
       - "wontfix"
+  "priority-low":
+    color: "#9ACD32"
+    description: "Low priority bug or issue - deal with when time permits"
+  "priority-normal":
+    color: "#FFFF00"
+    description: "Normal priority bug or issue - schedule in next sprint"
+  "priority-high":
+    color: "#FFA500"
+    description: "High priority bug or issue - should be top of backlog"
+  "priority-urgent":
+    color: "#FF0000"
+    description: "Urgent priority bug or issue - drop what you are working on!"
 
 # Repositories
 repos:
@@ -97,7 +110,7 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
-  aston-operator:
+  operator:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -145,7 +158,7 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
-  tidy-ui:
+  office:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -170,6 +183,12 @@ repos:
       <<: *labels
       # Add extra labels here.
   zonal-link:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
+      # Add extra labels here.
+  zonal-ordering:
     config:
       removeUnconfiguredLabels: true
     labels:
