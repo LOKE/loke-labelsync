@@ -89,6 +89,9 @@ labels: &labels
   "priority-urgent":
     color: "#FF0000"
     description: "Urgent priority bug or issue - drop what you are working on!"
+  "not-reproducible":
+    color: "#40E0D0"
+    description: "This issue has not been reproduced and thus should probably not be an issue"
 
 # Repositories
 repos:
