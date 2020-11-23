@@ -28,11 +28,11 @@ labels: &labels
     description: This issue or pull request already exists
     alias:
       - "inactive: duplicate"
-  "feature":
-    color: "#b5ff47"
-    description: Adding new functionality
-    alias:
-      - "addition: feature"
+  # "feature":
+  #   color: "#b5ff47"
+  #   description: Adding new functionality
+  #   alias:
+  #     - "addition: feature"
   "improvement":
     color: "#a2eeef"
     description: "Adding new functionality, or improving and enhancing an existing feature"
