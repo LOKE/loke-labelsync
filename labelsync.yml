@@ -197,3 +197,8 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
+  loke-redis-cache:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *labels
