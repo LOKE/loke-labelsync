@@ -110,7 +110,7 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
-  aston-operator:
+  operator:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -158,7 +158,7 @@ repos:
     labels:
       <<: *labels
       # Add extra labels here.
-  tidy-ui:
+  office:
     config:
       removeUnconfiguredLabels: true
     labels:
